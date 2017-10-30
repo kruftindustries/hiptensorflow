@@ -557,7 +557,7 @@ the Docker container.
 ### (Optional, Linux) Enable GPU Support
 
 If you installed the GPU version of TensorFlow, you must also install the Cuda
-Toolkit 8.0 and cuDNN v5.1.  Please see [Cuda
+Toolkit 8.0 and cuDNN v6.  Please see [Cuda
 installation](#optional-install-cuda-gpus-on-linux).
 
 You also need to set the `LD_LIBRARY_PATH` and `CUDA_HOME` environment
@@ -671,14 +671,14 @@ Install the toolkit into e.g. `/usr/local/cuda`.
 
 [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 
-Download cuDNN v5.1.
+Download cuDNN v6.
 
 Uncompress and copy the cuDNN files into the toolkit directory. Assuming the
 toolkit is installed in `/usr/local/cuda`, run the following commands (edited
 to reflect the cuDNN version you downloaded):
 
 ``` bash
-tar xvzf cudnn-8.0-linux-x64-v5.1-ga.tgz
+tar xvzf cudnn-8.0-linux-x64-v6.0.tgz
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include/
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64/
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
